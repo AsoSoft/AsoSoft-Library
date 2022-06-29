@@ -19,17 +19,17 @@ namespace AsoSoftLibrary {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class AsoSoftResources {
+    public class replaceFiles {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AsoSoftResources() {
+        internal replaceFiles() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace AsoSoftLibrary {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AsoSoftLibrary.AsoSoftResources", typeof(AsoSoftResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AsoSoftLibrary.replaceFiles", typeof(replaceFiles).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,181 @@ namespace AsoSoftLibrary {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ڴ	ĝ	//Garusi Consonant
+        ///ڎ	đ	//Hewrami Consonant
+        ///ۉ	ŵ	//Hewrami Consonant
+        ///ݵ	ė	//Hewrami Vowel
+        ///ݸ	ȯ	//Hewrami Vowel
+        ///ۊ	ẅ	//Southern Vowel
+        ///ئ	ʔ
+        ///ب	b
+        ///پ	p
+        ///ت	t
+        ///ج	c
+        ///چ	ç
+        ///ح	ḧ
+        ///خ	x
+        ///د	d
+        ///ر	r
+        ///ڕ	ř
+        ///ز	z
+        ///ژ	j
+        ///س	s
+        ///ش	ş
+        ///ع	ƹ
+        ///غ	ẍ
+        ///ف	f
+        ///ڤ	v
+        ///ق	q
+        ///ک	k
+        ///گ	g
+        ///ل	l
+        ///ڵ	ł
+        ///م	m
+        ///ن	n
+        ///ه	h
+        ///ا	a
+        ///ۆ	o
+        ///ە	e
+        ///ێ	ê
+        ///^ی	y
+        ///^و	w
+        ///(?&lt;=[aeêo])و	w	//after vowel
+        ///و(?=[aeêo])	w	//before vowel
+        ///(?&lt;=[aeêo])ی	y	//after vowel
+        ///ی(?=[aeêo])	y	//before vowel
+        ///^([bçdjl])$	$1i	//چ =&gt; çi   bcçdfghḧjklłmnpqrřsştvwxẍyzʔƹ.
+        /// </summary>
+        public static string G2PCertain {
+            get {
+                return ResourceManager.GetString("G2PCertain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to حەییی	ḧeyyî
+        ///تەییی	teyyî
+        ///ئاگر	ʔagir
+        ///قانع	qaniƹ
+        ///سالم	salim
+        ///عاشق	ƹaşiq.
+        /// </summary>
+        public static string G2PExceptions {
+            get {
+                return ResourceManager.GetString("G2PExceptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 066A	0025	//Arabic PERCENT SIGN
+        ///066B	002E	//Arabic DECIMAL SEPARATOR
+        ///066C	002C	//Arabic THOUSANDS SEPARATOR
+        ///066D	002A	//Arabic FIVE POINTED STAR
+        ///0751	062B	// ݑ
+        ///0752	067E	// ݒ
+        ///0750	067E	// ݐ
+        ///0753	062A	// ݓ
+        ///067F	062A	// ٿ
+        ///0679	062A	// ٹ
+        ///0758	0686	// ݘ
+        ///0689	062F	// ډ
+        ///068A	062F	// ڊ
+        ///068B	062F	// ڋ
+        ///068C	062F	// ڌ
+        ///068D	062F	// ڍ
+        ///068F	062F	// ڏ
+        ///0690	062F	// ڐ
+        ///0759	062F	// ݙ
+        ///075A	062F	// ݚ
+        ///076C	0695	// ݬ
+        ///0691	0695	// ڑ
+        ///0692	0695	// ڒ
+        ///0693	0695	// ړ
+        ///0694	0695	// ڔ
+        ///0696	0695	// ږ
+        ///0697	0698	// ڗ
+        ///0699	0698	// ڙ
+        ///076B	06 [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string NormalizerAdditional {
+            get {
+                return ResourceManager.GetString("NormalizerAdditional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A78C	0027	//Latin Small Letter Saltillo ꞌ
+        ///FEFF	200C	//ZERO WIDTH NO-BREAK SPACE
+        ///200B	200C	//ZERO WIDTH SPACE
+        ///2010	002D	//HYPHEN
+        ///2011	002D	//NON-BREAKING HYPHEN
+        ///2012	002D	//FIGURE DASH
+        ///2013	002D	//EN DASH
+        ///2014	002D	//EM DASH
+        ///2015	002D	//HORIZONTAL BAR
+        ///2212	002D	//Minus
+        ///00AD	002D	//Soft Hyphen
+        ///FE58	002D	//SMALL EM DASH
+        ///FE63	002D	//MALL HYPHEN-MINUS
+        ///FF0D	002D	//FULLWIDTH HYPHEN-MINUS
+        ///1680	0020	//OGHAM SPACE MARK
+        ///2000	0020	//EN QUAD
+        ///2001	0020	//EM QUAD
+        ///2002	0020	//EN SPACE
+        ///2003	0020	//EM SPACE
+        ///2004	0020	//THREE [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string NormalizerDeep {
+            get {
+                return ResourceManager.GetString("NormalizerDeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ʔ	EH
+        ///a	AA
+        ///b	B
+        ///p	P
+        ///t	T
+        ///c	JE
+        ///ç	CH
+        ///ḧ	HE
+        ///x	X
+        ///d	D
+        ///r	R
+        ///ř	RR
+        ///z	Z
+        ///j	ZH
+        ///s	S
+        ///ş	SH
+        ///ƹ	AH
+        ///ẍ	XE
+        ///f	F
+        ///v	V
+        ///q	Q
+        ///k	K
+        ///g	G
+        ///l	L
+        ///ł	LL
+        ///m	M
+        ///n	N
+        ///o	O
+        ///e	A
+        ///h	H
+        ///ê	E
+        ///î	I
+        ///y	Y
+        ///w	W
+        ///u	U
+        ///û	UU.
+        /// </summary>
+        public static string Phoneme2Ascii {
+            get {
+                return ResourceManager.GetString("Phoneme2Ascii", resourceCulture);
             }
         }
         
@@ -104,183 +279,9 @@ namespace AsoSoftLibrary {
         ///ô	ô
         ///õ	õ.
         /// </summary>
-        public static string G2P2IPA {
+        public static string Phoneme2IPA {
             get {
-                return ResourceManager.GetString("G2P2IPA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ڴ	ĝ	//Garusi Consonant
-        ///ڎ	đ	//Hewrami Consonant
-        ///ۊ	ü	//Southern Vowel
-        ///ۉ	ô	//Hewrami Vowel
-        ///ۋ	õ	//Hewrami Vowel
-        ///ئ	ʔ
-        ///ب	b
-        ///پ	p
-        ///ت	t
-        ///ج	c
-        ///چ	ç
-        ///ح	ḧ
-        ///خ	x
-        ///د	d
-        ///ر	r
-        ///ڕ	ř
-        ///ز	z
-        ///ژ	j
-        ///س	s
-        ///ش	ş
-        ///ع	ƹ
-        ///غ	ẍ
-        ///ف	f
-        ///ڤ	v
-        ///ق	q
-        ///ک	k
-        ///گ	g
-        ///ل	l
-        ///ڵ	ł
-        ///م	m
-        ///ن	n
-        ///ه	h
-        ///ا	a
-        ///ۆ	o
-        ///ە	e
-        ///ێ	ê
-        ///^ی	y
-        ///^و	w
-        ///(?&lt;=[aeêo])و	w	//after vowel
-        ///و(?=[aeêo])	w	//before vowel
-        ///(?&lt;=[aeêo])ی	y	//after vowel
-        ///ی(?=[aeêo])	y	//before vowel
-        ///^([bcçdfghḧjklłmnpqrřsştvwxẍyzʔƹ])$	$1i	//چ =&gt; çi.
-        /// </summary>
-        public static string G2PCertainConversions {
-            get {
-                return ResourceManager.GetString("G2PCertainConversions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to حەییی	ḧeyyî
-        ///تەییی	teyyî
-        ///ئاگر	ʔagir
-        ///قانع	qaniƹ
-        ///سالم	salim
-        ///عاشق	ƹaşiq.
-        /// </summary>
-        public static string G2PExceptions {
-            get {
-                return ResourceManager.GetString("G2PExceptions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ʔ	EH
-        ///a	AA
-        ///b	B
-        ///p	P
-        ///t	T
-        ///c	JE
-        ///ç	CH
-        ///ḧ	HE
-        ///x	X
-        ///d	D
-        ///r	R
-        ///ř	RR
-        ///z	Z
-        ///j	ZH
-        ///s	S
-        ///ş	SH
-        ///ƹ	AH
-        ///ẍ	XE
-        ///f	F
-        ///v	V
-        ///q	Q
-        ///k	K
-        ///g	G
-        ///l	L
-        ///ł	LL
-        ///m	M
-        ///n	N
-        ///o	O
-        ///e	A
-        ///h	H
-        ///ê	E
-        ///î	I
-        ///y	Y
-        ///w	W
-        ///u	U
-        ///û	UU.
-        /// </summary>
-        public static string G2PReplaces {
-            get {
-                return ResourceManager.GetString("G2PReplaces", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 066A	0025	//Arabic PERCENT SIGN
-        ///066B	002E	//Arabic DECIMAL SEPARATOR
-        ///066C	002C	//Arabic THOUSANDS SEPARATOR
-        ///066D	002A	//Arabic FIVE POINTED STAR
-        ///0751	062B	// ݑ
-        ///0752	067E	// ݒ
-        ///0750	067E	// ݐ
-        ///0753	062A	// ݓ
-        ///067F	062A	// ٿ
-        ///0679	062A	// ٹ
-        ///0758	0686	// ݘ
-        ///0689	062F	// ډ
-        ///068A	062F	// ڊ
-        ///068B	062F	// ڋ
-        ///068C	062F	// ڌ
-        ///068D	062F	// ڍ
-        ///068F	062F	// ڏ
-        ///0690	062F	// ڐ
-        ///0759	062F	// ݙ
-        ///075A	062F	// ݚ
-        ///076C	0695	// ݬ
-        ///0691	0695	// ڑ
-        ///0692	0695	// ڒ
-        ///0693	0695	// ړ
-        ///0694	0695	// ڔ
-        ///0696	0695	// ږ
-        ///0697	0698	// ڗ
-        ///0699	0698	// ڙ
-        ///076B	06 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string NormalizerReplacesOptional {
-            get {
-                return ResourceManager.GetString("NormalizerReplacesOptional", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to A78C	0027	//Latin Small Letter Saltillo ꞌ
-        ///FEFF	200C	//ZERO WIDTH NO-BREAK SPACE
-        ///200B	200C	//ZERO WIDTH SPACE
-        ///2010	002D	//HYPHEN
-        ///2011	002D	//NON-BREAKING HYPHEN
-        ///2012	002D	//FIGURE DASH
-        ///2013	002D	//EN DASH
-        ///2014	002D	//EM DASH
-        ///2015	002D	//HORIZONTAL BAR
-        ///2212	002D	//Minus
-        ///00AD	002D	//Soft Hyphen
-        ///FE58	002D	//SMALL EM DASH
-        ///FE63	002D	//MALL HYPHEN-MINUS
-        ///FF0D	002D	//FULLWIDTH HYPHEN-MINUS
-        ///1680	0020	//OGHAM SPACE MARK
-        ///2000	0020	//EN QUAD
-        ///2001	0020	//EM QUAD
-        ///2002	0020	//EN SPACE
-        ///2003	0020	//EM SPACE
-        ///2004	0020	//THREE [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string NormalizerReplacesRequierd {
-            get {
-                return ResourceManager.GetString("NormalizerReplacesRequierd", resourceCulture);
+                return ResourceManager.GetString("Phoneme2IPA", resourceCulture);
             }
         }
     }

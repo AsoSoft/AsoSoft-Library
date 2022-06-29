@@ -118,10 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NormalizerReplacesOptional" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\NormalizerReplacesOptional.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="G2PCertain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\G2PCertain.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="NormalizerReplacesRequierd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\NormalizerReplacesRequierd.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="G2PExceptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\G2PExceptions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NormalizerAdditional" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\NormalizeUnicodeAdditional.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NormalizerDeep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\NormalizeUnicodeDeep.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Phoneme2Ascii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\Phoneme2Ascii.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Phoneme2IPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\Phoneme2IPA.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

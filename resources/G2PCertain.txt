@@ -1,0 +1,44 @@
+﻿ڴ	ĝ	//Garusi Consonant
+ڎ	đ	//Hewrami Consonant
+ۉ	ŵ	//Hewrami Consonant
+ݵ	ė	//Hewrami Vowel
+ݸ	ȯ	//Hewrami Vowel
+ۊ	ẅ	//Southern Vowel
+ئ	ʔ
+ب	b
+پ	p
+ت	t
+ج	c
+چ	ç
+ح	ḧ
+خ	x
+د	d
+ر	r
+ڕ	ř
+ز	z
+ژ	j
+س	s
+ش	ş
+ع	ƹ
+غ	ẍ
+ف	f
+ڤ	v
+ق	q
+ک	k
+گ	g
+ل	l
+ڵ	ł
+م	m
+ن	n
+ه	h
+ا	a
+ۆ	o
+ە	e
+ێ	ê
+^ی	y
+^و	w
+(?<=[aeêo])و	w	//after vowel
+و(?=[aeêo])	w	//before vowel
+(?<=[aeêo])ی	y	//after vowel
+ی(?=[aeêo])	y	//before vowel
+^([bçdjl])$	$1i	//چ => çi   bcçdfghḧjklłmnpqrřsştvwxẍyzʔƹ

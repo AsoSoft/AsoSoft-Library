@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,20 +6,59 @@
     <Product>AsoSoft Class Library</Product>
     <Authors>Aso Mahmudi</Authors>
     <Description>AsoSoft Class Library offers basic natural language processing (NLP) algorithms for the Kurdish Language (ckb: Central branch of Kurdish).</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AsoSoft/AsoSoft-Library</PackageProjectUrl>
+    <PackageIcon>AsoSoft-logo.png</PackageIcon>
+    <PackageTags>kurdish normalization natural-language-processing</PackageTags>
+    <PackageReleaseNotes>AsoSoft Library for the Kurdish language processing (ckb: Central branch of Kurdish).
+Normalizer and Numeral Converter classes</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/AsoSoft/AsoSoft-Library</RepositoryUrl>
+    <Version>2.0.0</Version>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="AsoSoftResources.Designer.cs">
+    <None Remove="resources\G2PCertain.txt" />
+    <None Remove="resources\G2PExceptions.txt" />
+    <None Remove="resources\NormalizerOptional.txt" />
+    <None Remove="resources\NormalizerRequierd.txt" />
+    <None Remove="resources\Phoneme2Ascii.txt" />
+    <None Remove="resources\Phoneme2IPA.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\G2PCertain.txt" />
+    <Resource Include="resources\G2PExceptions.txt" />
+    <Resource Include="resources\NormalizerOptional.txt" />
+    <Resource Include="resources\NormalizerRequierd.txt" />
+    <Resource Include="resources\Phoneme2Ascii.txt" />
+    <Resource Include="resources\Phoneme2IPA.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="replaceFiles.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>AsoSoftResources.resx</DependentUpon>
+      <DependentUpon>replaceFiles.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AsoSoftResources.resx">
+    <EmbeddedResource Update="replaceFiles.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>AsoSoftResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>replaceFiles.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AsoSoft-logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
 </Project>
