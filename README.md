@@ -173,13 +173,16 @@ AsoSoft.Number2Word("لە ساڵی 1999دا بڕی 40% لە پارەکەیان �
 ```
 
 ## Kurdish Sort
-Sorting a string list in correct order of Kurdish alphabet
+Sorting a string list in correct order of Kurdish alphabet ("ئءاآأإبپتثجچحخدڎذرڕزژسشصضطظعغفڤقكکگلڵمنوۆۊۉهھەیێ")
 ```cs
-var myList = new List<string>{"ڕەنگ", "ئەو", "ئاو", "ڤەژین", "فڵان"}
+var myList = new List<string>{"یەک", "ڕەنگ", "ئەو", "ئاو", "ڤەژین", "فڵان"}
 AsoSoft.KurdishSort(myList);
->"ئاو", "ئەو", "ڕەنگ", "فڵان", "ڤەژین"<
+>"ئاو", "ئەو", "ڕەنگ", "فڵان", "ڤەژین", "یەک"<
 ```
-
+or using your custom order:
+```cs
+AsoSoft.CustomSort(List<string> inputList, List<char> inputOrder);
+```
 
 ## How to use?
 Install [AsoSoft Library package](https://www.nuget.org/packages/AsoSoftLibrary) via NuGet Gallery.
