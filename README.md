@@ -2,8 +2,9 @@
 AsoSoft Library offers basic natural language processing (NLP) algorithms for the Kurdish Language (ckb: Central branch of Kurdish).
 AsoSoft Library is written in C#.
 - **Grapheme-to-Phoneme (G2P) converter and Transliteration**: converts Kurdish text into syllabified phoneme string. Also transliterates Kurdish texts from Arabic script into Latin script and vice versa.
-- **Normalizer:** normalizes the Kurdish text and punctuation marks, unifies numerals, replaces Html Entities, extracts and replaces URLs and emails, and more.
-- **Numeral Converter:** converts any type of numbers into Kurdish words.
+- **Normalizer**: normalizes the Kurdish text and punctuation marks, unifies numerals, replaces Html Entities, extracts and replaces URLs and emails, and more.
+- **Numeral Converter**: converts any type of numbers into Kurdish words.
+- **Sort**: Sorts a list in correct Kurdish alphabet order.
 
 ## Grapheme-to-Phoneme (G2P) converter and Transliteration
 This function is based on the study "[Automated Grapheme-to-Phoneme Conversion for Central Kurdish based on Optimality Theory](https://www.sciencedirect.com/science/article/abs/pii/S0885230821000292)". 
@@ -170,6 +171,15 @@ It converts numerals into Central Kurdish words. It is useful in text-to-speech 
 AsoSoft.Number2Word("لە ساڵی 1999دا بڕی 40% لە پارەکەیان واتە $102.1 یان وەرگرت");
 >لە ساڵی هەزار و نۆسەد و نەوەد و نۆدا بڕی چل لە سەد لە پارەکەیان واتە سەد و دوو پۆینت یەک دۆلاریان وەرگرت<
 ```
+
+## Kurdish Sort
+Sorting a string list in correct order of Kurdish alphabet
+```cs
+var myList = new List<string>{"ڕەنگ", "ئەو", "ئاو", "ڤەژین", "فڵان"}
+AsoSoft.KurdishSort(myList);
+>"ئاو", "ئەو", "ڕەنگ", "فڵان", "ڤەژین"<
+```
+
 
 ## How to use?
 Install [AsoSoft Library package](https://www.nuget.org/packages/AsoSoftLibrary) via NuGet Gallery.
