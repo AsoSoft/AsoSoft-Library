@@ -44,6 +44,11 @@ AsoSoft.La2Ar("Gelî keç û xortên kurdan, hûn hemû bi xêr biçin");
 >گەلی کەچ و خۆرتێن کوردان، هوون هەموو ب خێر بچن<
 ```
 
+Arabic script into IPA:
+```cs
+AsoSoft.Phonemes2IPA(AsoSoft.G2P("شەو و ڕۆژ بووین بە گرفت. درێژیی دیوارەکە گرتن"));
+>ʃa·wu ro̞ʒ bujn ba gɪ·ɾɪft. dɪ·ɾɛ·ʒij di·wä·ɾa·ka gɪɾ·tɪn<
+```
 ## Kurdish Text Normalizer
 Several functions needed for Central Kurdish text normalization:
 
@@ -72,7 +77,7 @@ The normalization task in this function:
 the simple overloading:
 ```cs
 AsoSoft.Normalize("دەقے شیَعري خـــۆش. ره‌نگه‌كاني خاك");
->دەقے شێعری خۆش. ڕەنگەکانی خاک<
+>دەقی شێعری خۆش. ڕەنگەکانی خاک<
 ```
 
 or the complete overloading:
