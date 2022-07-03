@@ -10,6 +10,7 @@ namespace AsoSoftLibrary
 {
     public static partial class AsoSoft
     {
+	   /// <summary>converts numerals into Central Kurdish words. It is useful in text-to-speech tools.</summary>
 	   public static string Number2Word(string text)
 	   {
 		  // convert numbers to latin

@@ -265,6 +265,8 @@ namespace AsoSoftLibrary
 			 "۷", "٧", "7",
 			 "۸", "٨", "8",
 			 "۹", "٩", "9", };
+
+	   /// <summary>unifies numeral characters into desired numeral type from en (0123456789) or ar (٠١٢٣٤٥٦٧٨٩).</summary>
 	   public static string UnifyNumerals(string text, string NumeralType)
 	   {
 		  for (int i = 0; i < digits.Length; i += 3)
@@ -302,7 +304,7 @@ namespace AsoSoftLibrary
 		  return line.Trim();
 	   }
 
-	   /// <summary>HTML Entity replacement for web crawled texts (e.g. "&eacute;" with "é")</summary>
+	   /// <summary>HTML Entity replacement for web crawled texts (e.g. "&amp;eacute;" with "é")</summary>
 	   public static string ReplaceHtmlEntity(string text)
 	   {
 		  return Regex.Replace(text, "&[a-zA-Z]+;", m => System.Net.WebUtility.HtmlDecode(m.Value));

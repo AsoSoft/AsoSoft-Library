@@ -6,12 +6,14 @@ namespace AsoSoftLibrary
 {
     public static partial class AsoSoft
     {
+	   /// <summary>Sorting a string list in correct order of Kurdish alphabet.</summary>
 	   public static List<string> KurdishSort(List<string> inputList)
 	   {
 		  var ku = new List<char>();
 		  ku.AddRange("ئءاآأإبپتثجچحخدڎڊذرڕزژسشصضطظعغفڤقكکگڴلڵمنوۆۊۉۋهھەیێ");
 		  return CustomSort(inputList, ku);
 	   }
+	   /// <summary>Sorting a string list in custom order.</summary>
 	   public static List<string> CustomSort(List<string> inputList, List<char> inputOrder)
 	   {
 		  var baseChar = 62000;//  9472;

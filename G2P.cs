@@ -440,7 +440,7 @@ namespace AsoSoftLibrary
 			 return 1;
 	   }
 
-	   // for tests
+	   /// <summary>only for tests.</summary>
 	   public static Dictionary<string, int> AllCandidates(string grapheme)
 	   {
 		  return EVAL(Generator(g2pNormalize(grapheme)));
