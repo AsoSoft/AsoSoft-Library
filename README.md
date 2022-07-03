@@ -2,8 +2,9 @@
 AsoSoft Library offers basic natural language processing (NLP) algorithms for the Kurdish Language (ckb: Central branch of Kurdish).
 AsoSoft Library is written in C#.
 - **Grapheme-to-Phoneme (G2P) converter and Transliteration**: converts Kurdish text into syllabified phoneme string. Also transliterates Kurdish texts from Arabic script into Latin script and vice versa.
-- **Normalizer:** normalizes the Kurdish text and punctuation marks, unifies numerals, replaces Html Entities, extracts and replaces URLs and emails, and more.
-- **Numeral Converter:** converts any type of numbers into Kurdish words.
+- **Normalizer**: normalizes the Kurdish text and punctuation marks, unifies numerals, replaces Html Entities, extracts and replaces URLs and emails, and more.
+- **Numeral Converter**: converts any type of numbers into Kurdish words.
+- **Sort**: Sorts a list in correct Kurdish alphabet order.
 
 ## Grapheme-to-Phoneme (G2P) converter and Transliteration
 This function is based on the study "[Automated Grapheme-to-Phoneme Conversion for Central Kurdish based on Optimality Theory](https://www.sciencedirect.com/science/article/abs/pii/S0885230821000292)". 
@@ -24,11 +25,6 @@ AsoSoft.G2P("شەو و ڕۆژ بووین بە گرفت. درێژیی دیوار�
 >ˈşeˈwû ˈřoj ˈbûyn ˈbe ˈgiˈrift. ˈdiˈrêˈjîy ˈdîˈwaˈreˈkey ˈgirˈtin<
 ```
 ### Transliteration
-Latin script (Hawar) into Arabic script:
-```cs
-AsoSoft.La2Ar("Gelî keç û xortên kurdan, hûn hemû bi xêr biçin");
->گەلی کەچ و خۆرتێن کوردان، هوون هەموو ب خێر بچن<
-```
 
 Arabic script into Hawar Latin script (ح‌غ‌ڕڵ→ḧẍřł):
 ```cs
@@ -36,12 +32,23 @@ AsoSoft.Ar2La("گیرۆدەی خاڵی ڕەشتە؛ گوێت لە نەغمەی �
 >gîrodey xałî řeşte; gwêt le neẍmey tuyûre?<
 ```
 
-Arabic script into simplified (ḧẍřł→hxrl) Hawar Latin script:
+Arabic script into simplified (ح‌غ‌ڕڵ→hxrl) Hawar Latin script:
 ```cs
 AsoSoft.Ar2LaSimple("گیرۆدەی خاڵی ڕەشتە؛ گوێت لە نەغمەی تویوورە؟");
 >gîrodey xalî reşte; gwêt le nexmey tuyûre?<
 ```
 
+Latin script (Hawar) into Arabic script:
+```cs
+AsoSoft.La2Ar("Gelî keç û xortên kurdan, hûn hemû bi xêr biçin");
+>گەلی کەچ و خۆرتێن کوردان، هوون هەموو ب خێر بچن<
+```
+
+Arabic script into IPA:
+```cs
+AsoSoft.Phonemes2IPA(AsoSoft.G2P("شەو و ڕۆژ بووین بە گرفت. درێژیی دیوارەکە گرتن"));
+>ʃa·wu ro̞ʒ bujn ba gɪ·ɾɪft. dɪ·ɾɛ·ʒij di·wä·ɾa·ka gɪɾ·tɪn<
+```
 ## Kurdish Text Normalizer
 Several functions needed for Central Kurdish text normalization:
 
@@ -70,7 +77,7 @@ The normalization task in this function:
 the simple overloading:
 ```cs
 AsoSoft.Normalize("دەقے شیَعري خـــۆش. ره‌نگه‌كاني خاك");
->دەقے شێعری خۆش. ڕەنگەکانی خاک<
+>دەقی شێعری خۆش. ڕەنگەکانی خاک<
 ```
 
 or the complete overloading:
@@ -166,8 +173,20 @@ It converts numerals into Central Kurdish words. It is useful in text-to-speech 
 - querency marks ($100, £100, and €100)
 
 ```cs
-AsoSoft.Number2Word("لە ساڵی 1999دا بڕی 40% لە پارەکەیان واتە $102.1 یان وەرگرت"");
+AsoSoft.Number2Word("لە ساڵی 1999دا بڕی 40% لە پارەکەیان واتە $102.1 یان وەرگرت");
 >لە ساڵی هەزار و نۆسەد و نەوەد و نۆدا بڕی چل لە سەد لە پارەکەیان واتە سەد و دوو پۆینت یەک دۆلاریان وەرگرت<
+```
+
+## Kurdish Sort
+Sorting a string list in correct order of Kurdish alphabet ("ئءاآأإبپتثجچحخدڎذرڕزژسشصضطظعغفڤقكکگلڵمنوۆۊۉهھەیێ")
+```cs
+var myList = new List<string>{"یەک", "ڕەنگ", "ئەو", "ئاو", "ڤەژین", "فڵان"}
+AsoSoft.KurdishSort(myList);
+>"ئاو", "ئەو", "ڕەنگ", "فڵان", "ڤەژین", "یەک"<
+```
+or using your custom order:
+```cs
+AsoSoft.CustomSort(List<string> inputList, List<char> inputOrder);
 ```
 
 ## How to use?

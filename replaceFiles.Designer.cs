@@ -127,7 +127,8 @@ namespace AsoSoftLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 066A	0025	//Arabic PERCENT SIGN
+        ///   Looks up a localized string similar to 00AC	200C //Wrong ZWNJ by MS Word
+        ///066A	0025	//Arabic PERCENT SIGN
         ///066B	002E	//Arabic DECIMAL SEPARATOR
         ///066C	002C	//Arabic THOUSANDS SEPARATOR
         ///066D	002A	//Arabic FIVE POINTED STAR
@@ -153,9 +154,7 @@ namespace AsoSoftLibrary {
         ///0693	0695	// ړ
         ///0694	0695	// ڔ
         ///0696	0695	// ږ
-        ///0697	0698	// ڗ
-        ///0699	0698	// ڙ
-        ///076B	06 [rest of string was truncated]&quot;;.
+        ///069 [rest of string was truncated]&quot;;.
         /// </summary>
         public static string NormalizerAdditional {
             get {
@@ -236,7 +235,8 @@ namespace AsoSoftLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ʔ	ʔ
+        ///   Looks up a localized string similar to ng	ŋg
+        ///ʔ	ʔ
         ///b	b
         ///p	p
         ///t	t
