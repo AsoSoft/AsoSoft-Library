@@ -13,8 +13,8 @@
     <PackageReleaseNotes>AsoSoft Library for the Kurdish language processing (ckb: Central branch of Kurdish).
 Normalizer and Numeral Converter classes</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/AsoSoft/AsoSoft-Library</RepositoryUrl>
-    <Version>2.0.1</Version>
-    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <Version>2.0.3</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -39,17 +39,17 @@ Normalizer and Numeral Converter classes</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="replaceFiles.Designer.cs">
+    <Compile Update="resFiles.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>replaceFiles.resx</DependentUpon>
+      <DependentUpon>resFiles.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="replaceFiles.resx">
+    <EmbeddedResource Update="resFiles.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>replaceFiles.Designer.cs</LastGenOutput>
+      <LastGenOutput>resFiles.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
@@ -61,6 +61,7 @@ Normalizer and Numeral Converter classes</PackageReleaseNotes>
     <None Update="ReadMe.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

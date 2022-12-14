@@ -4,7 +4,7 @@
     <_LastSelectedProfileId>D:\DEV\AsoSoftLibrary\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Update="replaceFiles.resx">
+    <EmbeddedResource Update="resFiles.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
