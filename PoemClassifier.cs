@@ -1,4 +1,19 @@
-﻿using System;
+﻿// Automatic Meter Classification of Kurdish Poems
+// Copyright (C) 2019 Aso Mahmudi, Hadi Veisi
+// Maintainer: Aso Mahmudi (aso.mehmudi@gmail.com)
+// Demo: https://asosoft.github.io/poem/
+// Source Code: https://github.com/AsoSoft/AsoSoft-Library
+// Test-set: https://github.com/AsoSoft/Vejinbooks-Poem-Dataset
+// Paper: https://arxiv.org/abs/2102.12109
+// Cite:
+//@article{mahmudi2021automatic,
+//    title={Automatic Meter Classification of Kurdish Poems},
+//    author={Mahmudi, Aso and Veisi, Hadi},
+//    journal={arXiv preprint arXiv: 2102.12109},
+//    year={2021}
+//}
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;

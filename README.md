@@ -5,6 +5,7 @@ AsoSoft Library is written in C#.
 - **Normalizer**: normalizes the Kurdish text and punctuation marks, unifies numerals, replaces Html Entities, extracts and replaces URLs and emails, and more.
 - **Numeral Converter**: converts any type of numbers into Kurdish words.
 - **Sort**: Sorts a list in correct Kurdish alphabet order.
+- **Poem Meter Classifier**: Classifies the meter of the input Kurdish poem 
 
 ## Grapheme-to-Phoneme (G2P) converter and Transliteration
 This function is based on the study "[Automated Grapheme-to-Phoneme Conversion for Central Kurdish based on Optimality Theory](https://www.sciencedirect.com/science/article/abs/pii/S0885230821000292)". 
@@ -188,6 +189,19 @@ or using your custom order:
 ```cs
 AsoSoft.CustomSort(List<string> inputList, List<char> inputOrder);
 ```
+## Poem Meter Classifier
+It classifies the meter of the input Kurdish poem typed in Arabic script. The lines of the poem should be seprated by new line char ('\n').
+You can find Kurdish poems in https://books.vejin.net/.
+```cs
+var poem = AsoSoft.PoemNormalization(@"گەرچی تووشی ڕەنجەڕۆیی و حەسرەت و دەردم ئەمن
+قەت لەدەس ئەم چەرخە سپڵە نابەزم مەردم ئەمن
+ئاشقی چاوی کەژاڵ و گەردنی پڕ خاڵ نیم
+ئاشقی کێو و تەلان و بەندەن و بەردم ئەمن");
+var syllabified = AsoSoft.G2P(poem, true, true, true).Split('\n');
+var classified = AsoSoft.PoemClassification(syllabified);
+var poemType = classified.overalMeterType;
+var poemMeter = classified.overalPattern;
+```
 
 ## How to use?
 Install [AsoSoft Library package](https://www.nuget.org/packages/AsoSoftLibrary) via NuGet Gallery.
@@ -195,4 +209,4 @@ Then, insert `using AsoSoftLibrary;` into "Usings" of your codes.
 
 ## Development
 AsoSoft Library is developed and maintained by Aso Mahmudi.
-AsoSoft Library is written in C# (.NET Core).
+AsoSoft Library is written in C# (.NET 6).
