@@ -78,7 +78,7 @@ namespace AsoSoftLibrary
         /// <summary>Transliterating the Latin script into Arabic script of Kurdish (e.g. çak→چاک)</summary>
         public static string La2Ar(string text)
         {
-            text = replaceByList(text.ToLower(), TransliterationReplaces["La2ArMain"]);
+            text = replaceByList(text.ToLower(), TransliterationReplaces["La2Ar"]);
             return text;
         }
 
