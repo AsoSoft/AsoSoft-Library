@@ -13,7 +13,7 @@
     <PackageReleaseNotes>AsoSoft Library for the Kurdish language processing (ckb: Central branch of Kurdish).
 Normalizer and Numeral Converter classes</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/AsoSoft/AsoSoft-Library</RepositoryUrl>
-    <Version>2.0.3</Version>
+    <Version>2.1.1</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
