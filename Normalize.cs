@@ -67,8 +67,8 @@ namespace AsoSoftLibrary
           {"NormalizeKurdish2", new List<string>() {
 				//========= standard H, E, Y, K				    
 				"ه" + "\u200C", "ە",    // Heh+ZWNJ =>  kurdish AE
-				"ه" + "(?!([" + Ku +"ـ]|$))", "ە",   //final Heh looks like Ae
-				"ھ" + "(?!([" + Ku +"]|$))", "هـ",   // final Heh Doachashmee
+				"ه" + "(?=([^" + Ku +"ـ]|$))", "ە",   //final Heh looks like Ae
+				"ھ" + "(?=([^" + Ku +"]|$))", "هـ",   // final Heh Doachashmee
 				"ھ" , "ه",  // non-final Heh Doachashmee
 				"ى|ي", "ی",  // Alef maksura | Arabic Ye => Farsi ye
 				"ك", "ک",  // Arabic Kaf => Farsi Ke

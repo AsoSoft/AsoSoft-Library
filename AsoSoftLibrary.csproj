@@ -13,7 +13,7 @@
     <PackageReleaseNotes>AsoSoft Library for the Kurdish language processing (ckb: Central branch of Kurdish).
 Normalizer and Numeral Converter classes</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/AsoSoft/AsoSoft-Library</RepositoryUrl>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
@@ -27,15 +27,6 @@ Normalizer and Numeral Converter classes</PackageReleaseNotes>
     <None Remove="resources\NormalizerRequierd.txt" />
     <None Remove="resources\Phoneme2Ascii.txt" />
     <None Remove="resources\Phoneme2IPA.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="resources\G2PCertain.txt" />
-    <Resource Include="resources\G2PExceptions.txt" />
-    <Resource Include="resources\NormalizerOptional.txt" />
-    <Resource Include="resources\NormalizerRequierd.txt" />
-    <Resource Include="resources\Phoneme2Ascii.txt" />
-    <Resource Include="resources\Phoneme2IPA.txt" />
   </ItemGroup>
 
   <ItemGroup>
