@@ -94,12 +94,12 @@ namespace AsoSoftLibrary
         /// <summary>Transliterating the Latin script into Arabic script of Kurdish (e.g. çak→چاک)</summary>
         public static string Ar2La(string text)
         {
-            return Phonemes2Hawar(G2P(text));
+            return Phonemes2Hawar(G2P(text, backMergeConjunction:false));
         }
         /// <summary>Transliterating the Latin script into Arabic script of Kurdish (e.g. çak→چاک)</summary>
         public static string Ar2LaSimple(string text)
         {
-            text = Phonemes2Hawar(G2P(text));
+            text = Phonemes2Hawar(G2P(text, backMergeConjunction: false));
             text = text.Replace("ḧ", "h");
             text = text.Replace("ř", "r");
             text = text.Replace("ł", "l");

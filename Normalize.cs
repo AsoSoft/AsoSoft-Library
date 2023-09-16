@@ -206,13 +206,13 @@ namespace AsoSoftLibrary
             return output;
         }
 
-        /// <summary>Main Unicode Normalization for Central Kurdish</summary>
+        /// <summary>Unicode Normalization for Central Kurdish</summary>
         public static string Normalize(string text)
         {
             return Normalize(text, true, true, true, true, new Dictionary<char, string>());
         }
 
-        /// <summary>Unicode Normalization for Central Kurdish</summary>
+        /// <summary>Main Unicode Normalization for Central Kurdish</summary>
         public static string Normalize(string text,
            bool isOnlyKurdish,
            bool changeInitialR,
